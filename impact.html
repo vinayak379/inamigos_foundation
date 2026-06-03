@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact | InAmigos Foundation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    #impact {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #impact h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      background: linear-gradient(270deg, #ffdd00, #004aad, #00ffcc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientMove 8s ease infinite;
+    }
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .impact-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      transition: transform 0.3s ease;
+    }
+    .impact-card:hover {
+      transform: translateY(-5px);
+    }
+    .impact-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #004aad;
+    }
+    .impact-card p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">InAmigos Foundation</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="join.html">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Impact Section -->
+  <section id="impact" class="visible">
+    <h2>🌍 Our Social Impact 🌍</h2>
+    <div class="impact-grid">
+      
+      <div class="impact-card">
+        <h3>🍲 Meals Served</h3>
+        <p>50,000+</p>
+      </div>
+
+      <div class="impact-card">
+        <h3>🌱 Trees Planted</h3>
+        <p>20,000+</p>
+      </div>
+
+      <div class="impact-card">
+        <h3>💡 Interns Trained</h3>
+        <p>30,000+</p>
+      </div>
+
+      <div class="impact-card">
+        <h3>🐾 Animals Fed Daily</h3>
+        <p>50+</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 InAmigos Foundation | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
